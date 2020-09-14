@@ -58,7 +58,7 @@
         let versionToLoad = urlParams().appVersion ? urlParams().appVersion : defaultVersion
                 
 				let assets = {
-						'0.8.0': ['https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'assets/css/pygment_trac.css'],
+						'0.8.0': ['http://cdn.staticfile.org/font-awesome/5.10.0/css/all.css', 'assets/css/pygment_trac.css'],
 						'0.7.7': ['assets/css/font-awesome.min.css', 'assets/css/pygment_trac.css']
 				}
 				let versions = {
@@ -69,7 +69,7 @@
           let app = document.createElement('link')
           app.setAttribute('rel', 'stylesheet')
           app.setAttribute('href', assets[versionToLoad][k])
-          if (assets[versionToLoad][k] === 'https://use.fontawesome.com/releases/v5.8.1/css/all.css') {
+          if (assets[versionToLoad][k] === 'http://cdn.staticfile.org/font-awesome/5.10.0/css/all.css') {
             app.setAttribute('integrity', 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf')
             app.setAttribute('crossorigin', 'anonymous')
           }
